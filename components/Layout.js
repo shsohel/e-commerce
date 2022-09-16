@@ -1,19 +1,17 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 
-const Layout = ( { children, title, description, tags } ) => {
-    return (
-        <>
-            <div>
-                <Header />
-            </div>
-            <div className='max-w-[2000px] mx-auto bg-neutral-300'>
-                {/* <Header /> */}
-                {children}
-            </div>
-        </>
+const Layout = ({ children, title, description, tags }) => {
+  return (
+    <>
+      <div className="mx-auto">
+        <div>
+          <Header />
+        </div>
+        <div className="px-4">{children}</div>
+      </div>
+    </>
+  );
+};
 
-    )
-}
-
-export default Layout
+export default Layout;
