@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect } from "react";
 import {VscGlobe} from 'react-icons/vsc'
 
@@ -16,9 +17,10 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="flex items-center justify-between flex-wrap bg-neutral-100 px-4 p-2">
+      <nav className="flex items-center justify-between flex-wrap bg-neutral-100 p-4">
         <div className="flex items-center flex-shrink-0 text-slate-800 mr-6">
-          <svg
+          <Link href="/">
+            <a className="flex "> <svg
             className="fill-current h-8 w-8 mr-2"
             width="54"
             height="54"
@@ -30,6 +32,10 @@ const Header = () => {
           <span className="font-semibold text-xl tracking-tight">
             Tailwind CSS
           </span>
+            </a>
+        
+          </Link>
+         
         </div>
         <div className="block lg:hidden">
           <button
@@ -50,7 +56,7 @@ const Header = () => {
         </div>
         <div
           id="menuId"
-          className="w-full hidden xs:block flex-grow lg:flex lg:items-center  lg:w-auto mt-2 lg:mt-0"
+          className="w-full hidden xs:block flex-grow lg:flex lg:items-center  lg:w-auto mt-2 lg:mt-0 uppercase font-medium"
         >
           <div className="text-sm lg:flex-grow border-t-2 lg:border-t-0">
             
