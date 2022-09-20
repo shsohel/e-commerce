@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return  <div className='box-border md:box-content bg-white min-h-screen max-w-[2000] '>
+  return  <div className='box-content mx-auto w-screen px-auto bg-white min-h-screen  '>
   <Component {...pageProps} />
   </div>
   

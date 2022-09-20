@@ -24,7 +24,7 @@ const SubscriptionSection = () => {
                                 without relying on meaningful content. Lorem
                                 ipsum may be used .
                             </p>
-                            <div className="grid grid-cols-10  mt-6 ">
+                            <div className="grid grid-cols-1 lg:grid-cols-10  mt-6 ">
                                 <div className="uppercase font-semibold text-xl col-span-3 text-neutral-700">
                                     Subscription Now
                                 </div>

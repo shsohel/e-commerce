@@ -1,14 +1,14 @@
 import React from "react";
+import { Footer } from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children, title, description, tags }) => {
   return (
     <>
-      <div className="mx-auto">
-        <div>
+      <div className="">
           <Header />
-        </div>
-        <div className="px-4">{children}</div>
+        <div >{children}</div>
+        <Footer />
       </div>
     </>
   );

@@ -1,30 +1,25 @@
 import React from 'react';
 const CoverSection = () => {
-
     return (
-        <header className="bg-[url('/CoverImage.png')] bg-no-repeat   bg-center text-white mx-auto ">
-            <div
-                className="
-      flex h-[20rem] 
-      sm:h-[25rem] 
-      lg:h-[38rem] 
-      lg:p-[8px] 
-      items-center  
-      w-100 
-       ml-[2rem] 
-      lg:ml-[5rem] 
-      mr-[2rem] 
-      lg:mr-0
-      "
-            >
-                <div className="flex-1 w-100 lg:50">
-                    <h1 className="text-4xl lg:text-6xl">Resource</h1>
-                    <p className="text-1xl md:text-2xl  lg:text-3xl mt-3">
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to demonstrate
-                    </p>
+        <header className="bg-[url('/CoverImage.png')] bg-no-repeat bg-cover text-white mx-auto  ">
+            <div className="h-[25rem] xl:h-[35rem]">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 h-full ">
+                    <div className="col-span-1 h-full">
+                        <div className="flex justify-center items-center  h-full flex-col px-16">
+                            <div>
+                                <h1 className="text-4xl lg:text-6xl">
+                                    Resource
+                                </h1>
+                                <p className="text-1xl md:text-2xl  lg:text-3xl xl:text-3xl mt-3">
+                                    In publishing and graphic design, Lorem
+                                    ipsum is a placeholder text commonly used to
+                                    demonstrate
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 h-full hidden xl:block lg:block"></div>
                 </div>
-                <div className="flex-1 w-50 hidden lg:block"></div>
             </div>
         </header>
     );
