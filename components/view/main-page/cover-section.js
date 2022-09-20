@@ -1,8 +1,8 @@
 import React from 'react';
 const CoverSection = () => {
     return (
-        <header className="bg-[url('/CoverImage.png')] bg-no-repeat bg-cover text-white mx-auto  ">
-            <div className="h-[25rem] xl:h-[35rem]">
+        <header className=" text-white mx-auto container w-fit">
+            <div className="h-[25rem]  lg:h-[35rem] xl:h-[40rem]  ">
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 h-full ">
                     <div className="col-span-1 h-full">
                         <div className="flex justify-center items-center  h-full flex-col px-16">
