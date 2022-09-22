@@ -7,19 +7,20 @@ import FilterSection from './filter-section';
 import SubscriptionSection from './subscription-section';
 
 const MainPage = () => {
-  return (
-    <>
-      <div className="bg-[url('/CoverImage.png')] bg-no-repeat bg-cover text-white mx-auto   ">
-        <CoverSection />
-
-      </div>
-      <FilterSection />
-      <ArticleSection />
-      <BookDownloadSections />
-      <EventSection />
-      <SubscriptionSection />
-    </>
-  );
+    return (
+        <>
+            <div className="bg-[url('/CoverImage.png')] bg-no-repeat bg-cover ">
+                <CoverSection />
+            </div>
+            <div className="px-6">
+                <FilterSection />
+                <ArticleSection />
+                <BookDownloadSections />
+                <EventSection />
+                <SubscriptionSection />
+            </div>
+        </>
+    );
 };
 
 export default MainPage;
