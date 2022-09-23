@@ -124,28 +124,23 @@ export const navMenu = [
 export const primaryMenu = [
     {
         name: 'Company',
-        link:'#'
-
+        link: '#',
     },
     {
         name: 'Service',
-        link:'#'
-        
+        link: '#',
     },
     {
         name: 'Price',
-        link:'#'
-      
+        link: '#',
     },
     {
         name: 'Resource',
-        link:'#'
-      
+        link: '#',
     },
     {
         name: 'Enterprise',
-        link:'#'
-      
+        link: '#',
     },
 ];
 
