@@ -13,12 +13,12 @@ const FilterSection = () => {
                     <h5 className="font-medium text-1 text-neutral-700">
                         Filter
                     </h5>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-4">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-5 grid-cols-1 gap-4">
                         <div>
                         <ReactSelect
                                 id="long-value-select"
                                 instanceId="long-value-select"
-                                placeholder="Select"
+                                placeholder="Feature Topics"
                                 options={[]}
                                 value={null}
                                 classNamePrefix="dropdown"
@@ -33,7 +33,7 @@ const FilterSection = () => {
                         <ReactSelect
                                 id="long-value-select"
                                 instanceId="long-value-select"
-                                placeholder="Select"
+                                placeholder="Type"
                                 options={[]}
                                 value={null}
                                 classNamePrefix="dropdown"
@@ -48,7 +48,7 @@ const FilterSection = () => {
                         <ReactSelect
                                 id="long-value-select"
                                 instanceId="long-value-select"
-                                placeholder="Select"
+                                placeholder="Category"
                                 options={[]}
                                 value={null}
                                 classNamePrefix="dropdown"
@@ -63,7 +63,22 @@ const FilterSection = () => {
                         <ReactSelect
                                 id="long-value-select"
                                 instanceId="long-value-select"
-                                placeholder="Select"
+                                placeholder="Trending Topics"
+                                options={[]}
+                                value={null}
+                                classNamePrefix="dropdown"
+                                className="erp-dropdown-select"
+                                menuPosition="fixed"
+                                menuPlacement="auto"
+                                maxMenuHeight={200}
+                                menuShouldScrollIntoView
+                            />
+                        </div>
+                        <div>
+                        <ReactSelect
+                                id="long-value-select"
+                                instanceId="long-value-select"
+                                placeholder="More filters"
                                 options={[]}
                                 value={null}
                                 classNamePrefix="dropdown"
