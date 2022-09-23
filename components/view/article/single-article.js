@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import Link from 'next/link';
@@ -311,3 +312,14 @@ const SingleArticle = () => {
 };
 
 export default SingleArticle;
+=======
+import React from 'react'
+
+const SingleArticle = () => {
+  return (
+    <div>SingleArticle</div>
+  )
+}
+
+export default SingleArticle
+>>>>>>> 5c311ba9d642789585b4f6d44d651bd7b18f0dcc
