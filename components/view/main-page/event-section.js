@@ -1,19 +1,15 @@
 import React from 'react';
-import {
-    FaChevronRight,
-    FaChevronLeft,
-    FaRegBookmark
-} from 'react-icons/fa';
+import { FaChevronRight, FaChevronLeft, FaRegBookmark } from 'react-icons/fa';
 import Image from 'next/image';
 import Event from '../../../assets/Events.png';
 import Link from 'next/link';
-import { FiMap, FiMapPin } from 'react-icons/fi';
+import {  FiMapPin } from 'react-icons/fi';
 const EventSection = () => {
     return (
         <div className="mt-5">
             <div className="container mx-auto lg:px-8  min-h-[5rem]">
                 <div className="mt-5 pb-5">
-                    <div className="text-[3rem] font-medium">
+                    <div className="text-[2.5rem] font-medium">
                         <h2>Events</h2>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2   gap-4 mt-4">
@@ -223,13 +219,12 @@ const EventSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center my-20 '>
-                    <Link href='/'>
-                        <a className='text-sky-600 outline p-1 px-12 text-2xl font-medium'>
-                        View all events
+                <div className="flex justify-center my-20 ">
+                    <Link href="/">
+                        <a className="text-sky-600 outline p-1 px-12 text-2xl font-medium">
+                            View all events
                         </a>
                     </Link>
-                  
                 </div>
             </div>
         </div>

@@ -9,10 +9,10 @@ const SubscriptionSection = () => {
                 <div className="mt-5 pb-5">
                     <div className="grid grid-cols-1 lg:grid-cols-4   gap-4 mt-4">
                         <div className="col-span-1 lg:col-span-2">
-                            <p className="uppercase text-2xl font-light">
+                            <p className="uppercase  text-xl lg:text-2xl font-light">
                                 Collaborative Work Management
                             </p>
-                            <p className="text-6xl font-semibold tracking-widest">
+                            <p className="text-4xl lg:text-6xl font-semibold tracking-widest">
                                 Stay Connected
                             </p>
                         </div>

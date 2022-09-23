@@ -34,7 +34,7 @@ const ArticleSection = () => {
                                 form of a webpage or publication, without the
                                 meaning of the text influencing the design.
                             </p>
-                            <Link href="/">
+                            <Link href="/articles/how-did-van-gogh-s-turbulents">
                                 <a className='uppercase font-medium text-sky-600 hover:text-sky-400'>Read More</a>
                             </Link>
                         </div>

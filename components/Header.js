@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { VscGlobe } from 'react-icons/vsc';
+import { navMenu, primaryMenu } from '../pages/api/mode';
 
 const Header = () => {
+    
     const handleMenuCollapse = (menuId, authButtonId) => {
         const menu = document.getElementById(menuId);
         const findClassList = Object.values(menu?.classList).find(
@@ -18,11 +20,10 @@ const Header = () => {
 
     return (
         <div>
-            <nav className="flex items-center justify-between flex-wrap bg-neutral-100 p-6">
+            <nav className="flex items-center justify-between flex-wrap bg-white px-6 py-4">
                 <div className="flex items-center flex-shrink-0 text-slate-800 mr-6">
                     <Link href="/">
                         <a className="flex ">
-                            {' '}
                             <svg
                                 className="fill-current h-8 w-8 mr-2"
                                 width="54"
@@ -33,7 +34,7 @@ const Header = () => {
                                 <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
                             </svg>
                             <span className="font-semibold text-xl tracking-tight">
-                                Tailwind CSS
+                                LOGO
                             </span>
                         </a>
                     </Link>
@@ -57,45 +58,33 @@ const Header = () => {
                 </div>
                 <div
                     id="menuId"
-                    className="w-full hidden xs:block flex-grow lg:flex lg:items-center  lg:w-auto mt-2 lg:mt-0 uppercase font-medium"
+                    className="w-full hidden xs:block flex-grow lg:flex lg:items-center leading-none lg:w-auto mt-2 lg:mt-0 uppercase text-3xl font-medium"
                 >
-                    <div className="text-sm lg:flex-grow border-t-2 lg:border-t-0">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 hover:text-slate-400 mr-4"
-                        >
-                            Docs
-                        </a>
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 hover:text-slate-400 mr-4"
-                        >
-                            Examples
-                        </a>
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 hover:text-slate-400"
-                        >
-                            Blog
-                        </a>
+                    <div className="text-sm lg:flex-grow border-t-2 lg:border-t-0 text-center">
+                        {primaryMenu.map((nav, index) => (
+                            <Link href={nav.link} key={index}>
+                                <a className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 hover:text-slate-400 mr-4 active:text-red-700">
+                                    {nav.name}
+                                </a>
+                            </Link>
+                        ))}
                     </div>
-                    <div id="authButtonId" className='px-auto mr-3' >
+
+                    <div id="authButtonId" className="px-auto mr-3 flex flex-col lg:flex-row items-center">
                         <VscGlobe
-                            size={30}
-                            className=" hidden lg:inline-block  text-slate-800 hover:text-slate-600  mr-3 "
+                            size={28}
+                            className=" hidden lg:inline-block  stroke-transparent  text-slate-800 hover:text-slate-600  mr-3 "
                         />
-                        <a
-                            href="#"
-                            className="block lg:inline-block  text-sm px-6 py-[7px] leading-none border border-neutral-800 rounded text-slate-800 hover:text-slate-600 hover:border-transparent hover:bg-white mt-4 lg:mt-0"
-                        >
-                            Login
-                        </a>
-                        <a
-                            href="#"
-                            className="flex lg:inline-block ml-0 lg:ml-1 text-sm px-4 py-[7px] leading-none border border-neutral-800 rounded text-slate-800 hover:text-slate-600 hover:border-transparent hover:bg-white mt-4 lg:mt-0"
-                        >
-                            Registration
-                        </a>
+                        <Link href="/">
+                            <a className="  text-sm px-6 py-[7px] leading-none   text-sky-600 hover:text-sky-500  hover:bg-white mt-4 lg:mt-0">
+                                Log in
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className=" ml-0 lg:ml-1 text-sm px-4 py-[7px] leading-none   text-sky-600 hover:text-sky-500 hover:border-transparent hover:bg-white mt-4 lg:mt-0">
+                                Contact Sale
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </nav>

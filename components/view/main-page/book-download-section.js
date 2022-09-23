@@ -10,7 +10,7 @@ const BookDownloadSections = () => {
         <div className="mt-5">
             <div className="container mx-auto lg:px-8  min-h-[5rem]">
                 <div className="mt-5 pb-5">
-                    <div className="text-[3rem] font-medium">
+                    <div className="text-[2.5rem] font-medium">
                         <h2>Books & Download</h2>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2   gap-4 mt-4">
