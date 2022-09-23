@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Packages
+- "next": "12.3.0",
+- "react": "18.2.0",
+- "react-dom": "18.2.0"
 - react-select": "^5.4.0"
 - "react-icons": "^4.4.0",
 -  "tailwindcss": "^3.1.8"
